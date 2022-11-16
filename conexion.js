@@ -1,11 +1,12 @@
 const { default: mongoose } = require("mongoose");
 
 const username="admin";
-const password="admin";
+const password="Pe91541107@";
 const database="BDkryptike"
 // URI es es diferente a url esta es una localicacion de una pagina web y uri es una identificacion 
 //para cualqueir tipo de recurso o de protocolo
 const URI ="mongodb+srv://"+username+":"+password+"@cluster0.1lvbojb.mongodb.net/"+database+"?retryWrites=true&w=majority";
+//const URI ="mongodb+srv://admin:<Pe91541107@>@cluster0.1lvbojb.mongodb.net/BDkryptike?retryWrites=true&w=majority";
 
 
 const conectar =async() =>{
