@@ -1,7 +1,7 @@
 // aqui incorporo las rutas exclusivamente para el modiulo de clientes
 
 const ClienteOperacionesCRUD = require("../operaciones/ClienteOperacionesCRUD");
-const LoginOperaciones = require("../operaciones/loginOperaciones");
+const LoginOperaciones = require("../operaciones/LoginOperaciones");
 const router = require("express").Router(); // importo router q viene la estructura de los 
                                             //llamados para ver los metodos q necesito y donde lo llama
 
