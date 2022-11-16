@@ -1,4 +1,3 @@
-
 const clienteModelo = require("../modelos/ClienteModelo"); // debo importar el js de cliente modelo
 const bcrypt = require("bcrypt"); // importa para usar la funcion de encriptar
 const ClienteOperacionesCRUD = {}
@@ -208,6 +207,3 @@ ClienteOperacionesCRUD.crearTicket = async (req, res) => {
 module.exports = ClienteOperacionesCRUD;
 
 
-/*
-
-*/
