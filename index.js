@@ -10,6 +10,7 @@ const env = process.env; // variables de ambiente colocamos el puerto para el de
                          // que tome le numero del puerto o que es || el puerto 8080 , si no que tome cualquiera con el env.port
 const port =env.port || 8080;
 //app.use()
+app.use(express.json()); // esta libreria sirve para enviar con el metodo post formato json para crear el registro
 app.use(morgan('dev')); // aqui digo que ejecute morgan en modo desarrollador
 app.use(cors()); // esto me permite hacer conexiones externas
 
@@ -26,3 +27,6 @@ app.get("/", (request,response)=>{
 
 // ruta generica que va a ser clientes, importo cliente rutas
 app.use("/clientes", require("./rutas/ClienteRutas"));
+
+// ruta generica que va a ser login, importo login rutas
+app.use("/login", require("./rutas/LoginRutas"));  // aqui envio con el motodo post para conectar con postman
