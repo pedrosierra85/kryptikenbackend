@@ -177,6 +177,7 @@ ClienteOperacionesCRUD.borrarcliente = async (req, res) => {
   }
 }
 
+/*
 ClienteOperacionesCRUD.crearTicket = async (req, res) => {
   try {
     const objeto = req.body; // para enviar por el boddy la informacion
@@ -191,14 +192,14 @@ ClienteOperacionesCRUD.crearTicket = async (req, res) => {
           celular:3197800614,
           email:"pepe@uis.edu.co",
           password:"123"
-       }*/
+       }
     const cliente = new clienteModelo(objeto);
     const clienteguardado = await cliente.save();  //el await es que el espera para ejecutar esta orden
     res.status(201).send(clienteguardado);
   } catch (error) {
     res.status(400).send("error mariquis " + error);
   }
-}
+}*/
 
 
 
