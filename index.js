@@ -8,7 +8,7 @@ const mongoose = require("./conexion");  //conexion
 const app = express(); // para usar express
 const env = process.env; // variables de ambiente colocamos el puerto para el despliegue, para sistemas externos
                          // que tome le numero del puerto o que es || el puerto 8080 , si no que tome cualquiera con el env.port
-const port =env.port || 8080;
+const port =env.port || 3000;
 //app.use()
 app.use(express.json()); // esta libreria sirve para enviar con el metodo post formato json para crear el registro
 app.use(morgan('dev')); // aqui digo que ejecute morgan en modo desarrollador
